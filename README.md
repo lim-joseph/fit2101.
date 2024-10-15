@@ -14,7 +14,7 @@ VITE_SUPABASE_ANON_KEY=
 2. Replace first snippet with second in `src/pages/LandingPage.tsx`
 
 ```
-"redirectTo: https://fit2101.vercel.app/sprints"
+"redirectTo: https://fit2101-public.vercel.app/sprints"
 ```
 
 ```
