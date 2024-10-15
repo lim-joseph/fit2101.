@@ -136,8 +136,9 @@ export default function KanbanBoard({ id }: { id: string }) {
     const activeStateIndex = allowedStates.indexOf(activeStory.state);
     const overStateIndex = allowedStates.indexOf(overStory.state);
 
-    // Prevent moving backwards in the workflow
-    if (overStateIndex < activeStateIndex) return;
+    // disable for public use
+    // // Prevent moving backwards in the workflow
+    // if (overStateIndex < activeStateIndex) return;
 
     setStories((stories) => {
       const activeIndex = stories.findIndex((story) => story.id === active.id);
@@ -179,16 +180,15 @@ export default function KanbanBoard({ id }: { id: string }) {
 
     const activeStory = stories.find((story) => story.id === active.id);
     const overStory = stories.find((story) => story.id === over.id);
-    // console.log(activeStory?.name);
-    // console.log(overStory.name);
 
     if (!activeStory || !overStory) return;
 
     const activeStateIndex = allowedStates.indexOf(activeStory.state);
     const overStateIndex = allowedStates.indexOf(overStory.state);
 
-    // Prevent moving backwards in the workflow
-    if (overStateIndex < activeStateIndex) return;
+    // disable for public use
+    // // Prevent moving backwards in the workflow
+    // if (overStateIndex < activeStateIndex) return;
 
     setStories((stories) => {
       const activeIndex = stories.findIndex((story) => story.id === active.id);

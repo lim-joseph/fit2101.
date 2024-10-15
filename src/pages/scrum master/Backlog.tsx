@@ -17,7 +17,10 @@ export default function Backlog() {
 
   async function getBacklog() {
     try {
-      const { data, error } = await supabase.from("user_stories").select("*").order("id", { ascending: true });;
+      const { data, error } = await supabase
+        .from("user_stories")
+        .select("*")
+        .order("id", { ascending: true });
 
       if (error) {
         setError("Error fetching backlog.");

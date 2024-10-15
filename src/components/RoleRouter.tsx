@@ -70,8 +70,13 @@ export default function RoleRouter({ user, smElement, dElement }) {
   } else if (role === "D") {
     return dElement;
   } else {
-    return (
-      <h1 className="text-center text-5xl font-bold">401 - Unauthorized</h1>
-    );
+    // modify for public use.
+    return smElement;
+    // return (
+    //   <>
+    //     <h1 className="text-center text-5xl font-bold">401 - Unauthorized</h1>
+    //     <p>Ask a developer to invite you to a project.</p>
+    //   </>
+    // );
   }
 }
