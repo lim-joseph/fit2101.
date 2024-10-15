@@ -29,7 +29,7 @@ export default function LandingPage() {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: "http://localhost:5173/sprints",
+        redirectTo: "https://fit2101.vercel.app/sprints",
       },
     });
 
