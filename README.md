@@ -1,6 +1,4 @@
-# FIT2101
-
-"Jira clone" group project for FIT2101, migrated from Monash Gitlab servers. Modified slightly for public viewing and ease of use.
+# Jira Clone
 
 ## Setup
 
